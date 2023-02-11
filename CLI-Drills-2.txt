@@ -1,0 +1,72 @@
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ ps -eo pid,ppid,cmd,%mem,%cpu | head -5
+    PID    PPID CMD                         %MEM %CPU
+      1       0 /sbin/init splash            0.1  0.0
+      2       0 [kthreadd]                   0.0  0.0
+      3       2 [rcu_gp]                     0.0  0.0
+      4       2 [rcu_par_gp]                 0.0  0.0
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ ls
+Desktop                                 hello   Pictures   Videos
+Documents                               Music   Public     zoom_amd64.deb
+Downloads                               patern  snap
+google-chrome-stable_current_amd64.deb  patter  Templates
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ head -3 patter
+
+　　The villagers of Little Hangleron still called it "the Riddle House," even though it had been many years since the Riddle family had lived there. It stood on a hill overlooking the village, some of its windows boarded, tiles missing from its roof, and ivy spreading unchecked over its face. Once a fine-looking manor, and easily the largest and grandest building for miles around, the Riddle House was now damp, derelict, and unoccupied.
+　　The Little Hagletons all agreed that the old house was "creepy." Half a century ago, something strange and horrible had happened there, something that the older inhabitants of the village still liked to discuss when topics for gossip were scarce.
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ tail -3 patter
+　　Harry winked at them, turned to Uncle Vernon, and followed him silently from the station.
+　　There was no point worrying yet, he told himself, as he got into the back of the Dursleys' car.
+　　As Hagrid had said, what would come, would come ... and he would have to meet it when it did. 
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ cat patter | grep "Harry" | wc
+   2590   96911  560181
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ cat patter | grep -o ron patter | wc -w
+311
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ grep -o Dumbledore patter | wc -w
+595
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ sed -n '100,200p' patter
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ ps -e | grep chrome
+   2488 ?        00:01:05 chrome
+   2496 ?        00:00:00 chrome_crashpad
+   2498 ?        00:00:00 chrome_crashpad
+   2504 ?        00:00:00 chrome
+   2505 ?        00:00:00 chrome
+   2509 ?        00:00:00 chrome
+   2587 ?        00:01:16 chrome
+   2590 ?        00:00:12 chrome
+   2600 ?        00:00:00 chrome
+   2806 ?        00:00:18 chrome
+   2848 ?        00:00:00 chrome
+   3497 ?        00:00:16 chrome
+   3577 ?        00:00:05 chrome
+   5327 ?        00:00:01 chrome
+   5348 ?        00:00:00 chrome
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ ps aux | grep chrome
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ ps -ejf | grep "chrome"
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ ps aux --sort -%cpu | head
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ ps
+    PID TTY          TIME CMD
+   5248 pts/0    00:00:00 bash
+   7038 pts/0    00:00:00 ps
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ sudo apt install htop
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ sudo apt install vim
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ sudo apt install nginx
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ sudo apt remove nginx
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ ifconfig
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ nslookup www.google.com
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+Non-authoritative answer:
+Name:	www.google.com
+Address: 142.250.77.100
+Name:	www.google.com
+Address: 2404:6800:4007:816::2004
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ ping -c 3 google.com
+PING google.com(maa05s23-in-x0e.1e100.net (2404:6800:4007:81e::200e)) 56 data bytes
+64 bytes from maa05s23-in-x0e.1e100.net (2404:6800:4007:81e::200e): icmp_seq=1 ttl=57 time=409 ms
+--- google.com ping statistics ---
+3 packets transmitted, 1 received, 66.6667% packet loss, time 2009ms
+rtt min/avg/max/mdev = 408.814/408.814/408.814/0.000 ms
+@Vinayakaraju123

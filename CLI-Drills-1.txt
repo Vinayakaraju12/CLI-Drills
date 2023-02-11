@@ -1,0 +1,33 @@
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ mkdir hello
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ cd hello
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello$ mkdir five one
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello$ cd five
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/five$ mkdir six
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/five$ cd six
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/five/six$ touch c.txt
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/five/six$ mkdir seven
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/five/six$ cd seven
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/five/six/seven$ touch error.log
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/five/six/seven$ cd
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ cd hello/one
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one$ touch a.txt b.txt
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one$ mkdir two
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one$ cd two
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two$ touch d.txt
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two$ mkdir two
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two$ mkdir three
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two$ cd three
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two/three$ touch e.txt
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two/three$ mkdir four
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two/three$ cd four
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two/three/four$ touch access.log
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two/three/four$ rm access.log
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one/two/three/four$ cd
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ rm hello/five/six/seven/error.log
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~$ cd hello/one
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one$ echo "unix is a family of multitasking,multiuser computer operating  systems that derive from the original AT&T Unix,development starting in the 1970s at the bell labs research centre bt ken thompson ,dennis Ritchie,and others,">>a.txt
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello/one$ cd ..
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello$ rm -r five
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello$ mv one uno
+ubuntu@ubuntu-IdeaPad-5-15ITL05:~/hello$ mv uno/a.txt uno/two
+@Vinayakaraju123
